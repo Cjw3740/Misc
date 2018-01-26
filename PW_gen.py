@@ -10,7 +10,7 @@ def rand_PW(l,u,n,s,min_char):
     shuffle(upp)
     shuffle(num)
     shuffle(spec)
-    PW = low[:l]+upp[:u]+num[:n]+spec[:s]+big[:min_char-l-u-n-s]
+    PW = low[:l]+upp[:u]+num[:n]+spec[:s]+big[:max(0,min_char-l-u-n-s)]
     shuffle(PW)
     PW_str = "".join(char for char in PW)
     print (PW_str); 
