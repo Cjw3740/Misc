@@ -1,3 +1,4 @@
+#l,u,n,s specifies the minimum number of lower, upper, numbers, and special characters the password should have
 def rand_PW(l,u,n,s,min_char):
     from random import shuffle
     low = list("abcdefghijklmnopqrstuvwxyz")
