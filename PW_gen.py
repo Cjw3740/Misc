@@ -3,7 +3,7 @@ def rand_PW(l,u,n,s,min_char):
     from random import shuffle
     low = list("abcdefghijklmnopqrstuvwxyz")
     upp = [l.upper() for l in low]
-    num = list("1234567890")
+    num = [str(num) for num in range(10)]
     spec = list("!@#$%^&*?")
     big = low+upp+num+spec
     shuffle(big)
